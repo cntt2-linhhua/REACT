@@ -38,7 +38,15 @@ var Two = function()
     );
   }
 }
-
+class Five extends Component {
+  render() {
+    return (
+      <div>
+         <button> React JS component so 5 </button>
+      </div>
+    );
+  }
+}	
 class App extends Component {
   render() {
     return (
@@ -50,6 +58,7 @@ class App extends Component {
         <Three/>
         <hr/>
         <Four/>
+        <Five/>
         </header>
       </div>
     );
