@@ -19,6 +19,24 @@ class App1 extends Component {
   }
 }
 
+const so = [1,2,3,4,5,6,7,8,9];
+const so2 =so.map((x)=>x*2+",");
+
+const so3 = so.map((x)=>(
+  <div>
+    <li>So : {x}</li>
+  </div>
+)
+);
+class App2 extends Component {
+  render() {
+    return (
+      <div>
+       {so2} 
+      </div>
+    );
+  }
+}
 
 
 function App() {
@@ -27,6 +45,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <App1/>
+        <App2/>
         </header>
         <p className="App-intro">
          To get started, edit <core>src/App.js</core> and save to reload
