@@ -6,6 +6,9 @@ class Contents extends Component {
     constructor(props)
     {
         super(props);
+        this.state = {
+            trangThai1:0
+        }
     }
 
     thongbao = () => {alert('Cach xu ly thao tac trong react js ');}
@@ -14,8 +17,30 @@ class Contents extends Component {
 
 
     thongbao3 = (x) => {alert(x);}
+    
+    renderButton =() => {
+        <div className="row">
+            <div className="btn btn-group">
+                    <div className="btn btn-info" >Edit</div>
+                    <div className="btn btn-warning" >Remove</div>
+                    </div>
+          </div>
+    }
+    
+    renderform =() => {
+        <div className="row">
+                            <div class="form-group">
+                                <input type="text" name="ten" className="form-control"></input>
+                                <div className="btn btn-block btn-denger">Save</div>
+                            </div>
+                        </div>
+    }
 
-
+    displayCheck =() => {
+        if(this.state.trangThai1 == 0)
+        return this.renderButton();
+        else return this.renderform();
+    }
     render() {
         return (
             <section>
@@ -32,22 +57,11 @@ class Contents extends Component {
                         <p>
                             {this.props.trichdan}
                         </p>
-                        <div className="row">
-                            <div className="btn btn-info" onClick={this.thongbao}>Edit</div>
-                            <div className="btn btn-warning" onClick={this.thongbao2}>Remove</div>
-                           </div>
-                          <hr />
-                        </div>
-
-                        <div className="row">
-                            <div class="form-group">
-                                <input type="text" name="ten" class="form-control"></input>
-                                <div className="btn btn-block btn-denger">Save</div>
-                            </div>
-                        </div>
-
+                        
+                        {this.displayCheck()}
                     </div>
                 </div>
+            </div>
             </div>
       </section>
         );
