@@ -3,63 +3,46 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function One() {
-  return (
-    <div>
-      <h1>So 1 tap 1</h1>
-      <h5>So 1 tap cuoi</h5>
-    </div> 
-    );
-}
+function NumberOne(props) {
 
-var Two = function()
-{
   return (
     <div>
-    <h3> Cach so 2 </h3>
+<div className="col-6">
+ <div className="card">
+  <img className="card-img-top" scr={props.linkanh} />
+   <div className="card-body">
+      <h4 className="card-title"> {props.tieude} </h4>
+      <p className="card-text">Text</p>
     </div>
-  );
+    </div>
+     </div>
+   </div>
+  )
 }
-
-
-  var Three = () =>(
-  <div>
-     <h2> so 1 tap 1 </h2>	    
-     <h3> so 1 tap 2 </h3>	    
-     </div>	
-     );
-
-  class Four extends Component {
-  render() {
-    return (
-      <div>
-         <button> React JS component so 4 </button>
-      </div>
-    );
-  }
-}
-class Five extends Component {
-  render() {
-    return (
-      <div>
-         <button> React JS component so 5 </button>
-      </div>
-    );
-  }
-}	
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <One/>
-        <Two/>
-        <Three/>
-        <hr/>
-        <Four/>
-        <Five/>
-        </header>
+        <h1 className="App-title">Welcome to React</h1>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+       </header>
+
+       <div className="container">
+        <div className="row">
+          <NumberOne tieude="San pham 1" linkanh="https://kenh14cdn.com/2019/6/19/hoatran-9781-1560913999285308451313.jpg" />
+          <NumberOne tieude="San pham 2" linkanh="https://i.pinimg.com/originals/3c/f6/88/3cf6884def2bb5c878622614a13e3c6d.jpg" />
+          <NumberOne tieude="Aquamon" linkanh="https://i.pinimg.com/originals/60/e3/1e/60e31e32c3faf797fdd1953f485731bf.jpg" />
+        </div>
+      </div>
       </div>
     );
   }
