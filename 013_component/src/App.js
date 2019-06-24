@@ -11,9 +11,18 @@ function App() {
     <div className="013">
       <Topmenu/>
       <Header/>
-      <Content tieude = "Cach su dung props bang class " vitri1 = "order-lg-2" anh ="img/01.jpg" trichdan="trich dan so 1"/>
+      <Content tieude = "Cach su dung props " vitri1 = "order-lg-2" anh ="img/01.jpg" trichdan="trich dan so 1"/>
       <Content tieude = "Cach su dung so 1 " anh ="img/02.jpg" trichdan="trich dan so 2" />
       <Content tieude = "Cach su dung so 2 " vitri1 = "order-lg-2" anh ="img/03.jpg" trichdan="trich dan so 3"/>
+      
+      <Content tieude = "Cach su dung props " vitri1 = "order-lg-2" anh ="img/01.jpg" trichdan="trich dan so 1"/>
+      <Content tieude = "Cach su dung so 1 " anh ="img/02.jpg" trichdan="trich dan so 2" />
+      <Content tieude = "Cach su dung so 2 " vitri1 = "order-lg-2" anh ="img/03.jpg" trichdan="trich dan so 3"/>
+      
+      <Content tieude = "Cach su dung props " vitri1 = "order-lg-2" anh ="img/01.jpg" trichdan="trich dan so 1"/>
+      <Content tieude = "Cach su dung so 1 " anh ="img/02.jpg" trichdan="trich dan so 2" />
+      <Content tieude = "Cach su dung so 2 " vitri1 = "order-lg-2" anh ="img/03.jpg" trichdan="trich dan so 3"/>
+      
       <Footer/>
     </div>
   );
