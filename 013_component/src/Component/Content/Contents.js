@@ -35,11 +35,17 @@ class Contents extends Component {
                         <div className="row">
                             <div className="btn btn-info" onClick={this.thongbao}>Edit</div>
                             <div className="btn btn-warning" onClick={this.thongbao2}>Remove</div>
-                            <div className="btn btn-warning" onClick={() => this.thongbao3("ha ha")}>Tb3</div>
-                            <div className="btn btn-warning" onClick={this.thongbao3.bind(this,"ho ho ho")}>Tb4</div>
-                          </div>
+                           </div>
                           <hr />
                         </div>
+
+                        <div className="row">
+                            <div class="form-group">
+                                <input type="text" name="ten" class="form-control"></input>
+                                <div className="btn btn-block btn-denger">Save</div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
